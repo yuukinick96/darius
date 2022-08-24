@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title> Games/Anime</title>
+   <style>
+      body{
+          background-color: #B6E5EF;
+            color: white;
+            font-family: Bigshot One;
+            text-align: center;
+
+      }
+
+      .main{
+         display: flex;
+         position: absolute;
+         justify-content: center;
+         width: 100%;
+         height: 100%;
+      }
+
+      table tr{
+         width:100%;
+         height: 100%;
+      }
+
+      td{
+         width:50%;
+         height:100%;
+         padding-bottom: 30px;
+      }
+
+      tr{
+         margin-bottom: 50px;
+      }
+
+      table{
+         margin-left:auto;
+         margin-right:auto;
+      }
+
+      .card{
+         background-color: transparent;
+         width:800px;
+         height:800px;
+         perspective: 1000px;
+      }
+
+      .card img{
+         width:800px;
+         height:800px;
+      }
+
+      .inner{
+         position:relative;
+         width:100%;
+         height:100%;
+         transition: transform 0.5s;
+         transform-style: preserve-3d;
+      }
+
+      .front, .back{
+         position:absolute;
+         width:100%;
+         height:100%;
+         display:flex;
+         justify-content: center;
+         align-items: center;
+         backface-visibility: hidden;
+         -webkit-backface-visibility:hidden;
+         font-size: 50px;
+         color: white;
+      }
+
+      .back{
+         background-color: black;
+         transform: rotateX(180deg);
+      }
+
+      .card:hover .inner{
+          transform: rotateX(180deg);
+      }
+
+
+
+   </style>
+</head>
+<body>
+   <div>
+<button class = "btn" onclick = "document.location = './index.html' "> Back 
+    </button>
+ </div>
+   <div class = "main">
+      <table class = "center"> 
+         <tr>
+            <td>
+               <div class = "card">
+                  <div class = "inner">
+                     <div class = "image">
+                        <img src="https://static.wikia.nocookie.net/spy-x-family9171/images/7/76/SPY_x_FAMILY_Key_Visual_1.png/revision/latest?cb=20211031171232" class = "front">
+                     </div>
+                     <div class = "back">
+                        <p> Spy X Family スパイファミリー</p>
+                     </div>
+                  </div>
+               </div>
+
+            </td>
+
+            <td>
+               <div class = "card">
+                  <div class = "inner">
+                     <div class = "image">
+                        <img src="https://pbs.twimg.com/media/FVfL-5mUEAUc348.jpg" class = "front">
+                     </div>
+                     <div class = "back">
+                        <p> Roblox Bedwars</p>
+                     </div>
+                  </div>
+               </div>
+
+            </td>
+         </tr>
+         <tr>
+            <td>
+               <div class = "card">
+                  <div class = "inner">
+                     <div class = "image">
+                        <img src="https://static.wikia.nocookie.net/shingekinokyojin/images/d/d8/Attack_on_Titan_Season_1.jpg/revision/latest?cb=20211005182832" class = "front">
+                     </div>
+                     <div class = "back">
+                        <p>Attack On Titan 進撃の巨人</p>
+                     </div>
+                  </div>
+               </div>
+
+            </td>
+
+            <td>
+               <div class = "card">
+                  <div class = "inner">
+                     <div class = "image">
+                        <img src="https://img1.ak.crunchyroll.com/i/spire4/5568ffb263f6bcba85a639980b80dd9a1612993223_full.jpg" class = "front">
+                     </div>
+                     <div class = "back">
+                        <p> Naruto ナルト</p>
+                     </div>
+                  </div>
+               </div>
+
+            </td>
+         </tr>
+
+      </table>
+   </div>
+</body>
+</html>
